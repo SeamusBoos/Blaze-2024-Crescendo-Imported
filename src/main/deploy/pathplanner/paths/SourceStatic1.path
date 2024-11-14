@@ -1,0 +1,70 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.3973572133190786,
+        "y": 3.8
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.9994701885647073,
+        "y": 3.6090861298001666
+      },
+      "isLocked": false,
+      "linkedName": "StartFrontStage"
+    },
+    {
+      "anchor": {
+        "x": 2.6603258931025917,
+        "y": 3.230850111074105
+      },
+      "prevControl": {
+        "x": 2.293183835025989,
+        "y": 3.377706934304746
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "SourceStatic1"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "SpinUp",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpWithPivot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -42.5,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Source Static Paths",
+  "previewStartingState": {
+    "rotation": -90.23433411250632,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

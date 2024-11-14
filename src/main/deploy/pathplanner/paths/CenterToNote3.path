@@ -1,0 +1,132 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.85,
+        "y": 5.55
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.131214515950159,
+        "y": 3.7288705563326627
+      },
+      "isLocked": false,
+      "linkedName": "CenterNote"
+    },
+    {
+      "anchor": {
+        "x": 8.140179660641012,
+        "y": 3.8011354895949236
+      },
+      "prevControl": {
+        "x": 7.242301600943127,
+        "y": 3.8011354895949236
+      },
+      "nextControl": {
+        "x": 9.138555667252179,
+        "y": 3.8011354895949236
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.85,
+        "y": 5.55
+      },
+      "prevControl": {
+        "x": 6.145667502602611,
+        "y": 3.699964583027758
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "CenterNote"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "SpinUp",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0.75,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "IntakeOffReadyShoot",
+      "waypointRelativePos": 1.35,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeOff"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Pitch40"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0.0,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Close 4 Note & 5 Note",
+  "previewStartingState": {
+    "rotation": 0.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

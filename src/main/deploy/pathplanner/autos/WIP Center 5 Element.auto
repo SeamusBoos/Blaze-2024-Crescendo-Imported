@@ -1,0 +1,144 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3472759339884879,
+      "y": 5.549946874541637
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "SpinUpTimeout"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Pitch40"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "C5-1"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Pitch40"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "FullPassthroughTimeout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "C5-2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "C5-3"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Pitch40"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "FullPassthroughTimeout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "CenterToSource"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "Pitch44"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "FullPassthroughTimeout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "SourceToAmp"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "PitchAmp"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "FullPassthroughTimeout"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

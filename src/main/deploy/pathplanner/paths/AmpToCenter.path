@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.55,
+        "y": 6.814156597901747
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.1341986916909903,
+        "y": 5.997058678085207
+      },
+      "isLocked": false,
+      "linkedName": "AmpNoteReal"
+    },
+    {
+      "anchor": {
+        "x": 2.85,
+        "y": 5.55
+      },
+      "prevControl": {
+        "x": 2.1306859719894953,
+        "y": 5.506641040042643
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "CenterNote"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "FullPassthrough",
+      "waypointRelativePos": 0.0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "FullPassthrough"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "Pitch40"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0.0,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Close 4 Note & 5 Note",
+  "previewStartingState": {
+    "rotation": 25.69,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

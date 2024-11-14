@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.4120428956421427,
+        "y": 1.6301107378601165
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 2.412042895642146,
+        "y": 1.6301107378601165
+      },
+      "isLocked": false,
+      "linkedName": "StartNextToSource"
+    },
+    {
+      "anchor": {
+        "x": 7.55,
+        "y": 0.7636554807993345
+      },
+      "prevControl": {
+        "x": 6.55,
+        "y": 0.7636554807993345
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "LookForMid5"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Source Corner Dynamic Paths",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

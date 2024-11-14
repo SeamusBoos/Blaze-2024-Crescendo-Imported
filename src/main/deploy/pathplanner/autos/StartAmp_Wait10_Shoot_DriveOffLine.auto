@@ -1,0 +1,37 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.765872873427322,
+      "y": 6.681985456994171
+    },
+    "rotation": 59.17956107651273
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 10.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpWaitPath"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Wait Autos",
+  "choreoAuto": false
+}

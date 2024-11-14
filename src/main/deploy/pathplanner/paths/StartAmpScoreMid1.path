@@ -1,0 +1,146 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.77,
+        "y": 6.68
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.9006165533543484,
+        "y": 6.689747363091188
+      },
+      "isLocked": false,
+      "linkedName": "StartAmp"
+    },
+    {
+      "anchor": {
+        "x": 3.4285060119416015,
+        "y": 6.951886579829497
+      },
+      "prevControl": {
+        "x": 2.4385565182804356,
+        "y": 6.810465223592187
+      },
+      "nextControl": {
+        "x": 4.339044171046089,
+        "y": 7.0819634597015675
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.7788549943297065,
+        "y": 5.76674167432842
+      },
+      "prevControl": {
+        "x": 6.754016517458557,
+        "y": 5.82632530670465
+      },
+      "nextControl": {
+        "x": 9.021811846440594,
+        "y": 5.694476741066159
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.686950053685439,
+        "y": 6.549814316086593
+      },
+      "prevControl": {
+        "x": 5.4240523729604995,
+        "y": 6.154878052909121
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "ShootMid1"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.65,
+      "rotationDegrees": 25.0,
+      "rotateFast": true
+    },
+    {
+      "waypointRelativePos": 2.0,
+      "rotationDegrees": 0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "ShootFirstNote",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": []
+        }
+      }
+    },
+    {
+      "name": "FullPassthrough",
+      "waypointRelativePos": 0.5,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "FullPassthrough"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake & Spin Up",
+      "waypointRelativePos": 1.5,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeNoTimeout"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 12.5,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Midline",
+  "previewStartingState": {
+    "rotation": 60.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

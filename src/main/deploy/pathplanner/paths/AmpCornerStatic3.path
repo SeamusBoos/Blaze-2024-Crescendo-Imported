@@ -1,0 +1,93 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 7.981196807464037,
+        "y": 6.03
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 6.955034755139932,
+        "y": 6.29015375974414
+      },
+      "isLocked": false,
+      "linkedName": "AmpStatic2"
+    },
+    {
+      "anchor": {
+        "x": 4.599197930790228,
+        "y": 6.272596207164246
+      },
+      "prevControl": {
+        "x": 5.850545760491137,
+        "y": 6.382074956390844
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "AmpStatic3"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "SpinUp",
+      "waypointRelativePos": 0.1,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpWithPivot"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeOff"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 8.746162262555162,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Amp Corner Static Paths",
+  "previewStartingState": {
+    "rotation": -30.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

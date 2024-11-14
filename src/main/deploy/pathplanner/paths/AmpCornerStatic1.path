@@ -1,0 +1,92 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.4,
+        "y": 7.3
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.86729904765713,
+        "y": 7.651240490316401
+      },
+      "isLocked": false,
+      "linkedName": "StartWhiteAmpLine"
+    },
+    {
+      "anchor": {
+        "x": 2.8659254456254897,
+        "y": 7.665926172639466
+      },
+      "prevControl": {
+        "x": 1.8659254456254897,
+        "y": 7.665926172639466
+      },
+      "nextControl": {
+        "x": 3.8659254456254897,
+        "y": 7.665926172639466
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.099522760762874,
+        "y": 7.063813197393838
+      },
+      "prevControl": {
+        "x": 3.8939232082399773,
+        "y": 7.313469796885927
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "PastAmp"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1.0,
+      "rotationDegrees": 90.0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "spinup",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpWithPivot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 23.0,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Amp Corner Static Paths",
+  "previewStartingState": {
+    "rotation": 90.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

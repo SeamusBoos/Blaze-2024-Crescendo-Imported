@@ -1,0 +1,103 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 4.525407548131734,
+        "y": 4.86096084893422
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 5.788376227915247,
+        "y": 4.317590602980848
+      },
+      "isLocked": false,
+      "linkedName": "stageShot"
+    },
+    {
+      "anchor": {
+        "x": 6.669517167299094,
+        "y": 3.3336498873355533
+      },
+      "prevControl": {
+        "x": 6.374489347601115,
+        "y": 3.576613974145654
+      },
+      "nextControl": {
+        "x": 6.919173766791183,
+        "y": 3.1280503348126554
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.756257659205837,
+        "y": 2.4231375833055786
+      },
+      "prevControl": {
+        "x": 7.198201730929401,
+        "y": 2.4231375833055786
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "AutoShoot",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "AutoShootPitchOnly"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "ShooterOff",
+      "waypointRelativePos": 0.25,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "ShootQuick"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Close 4 Note & 5 Note",
+  "previewStartingState": {
+    "rotation": -12.5,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

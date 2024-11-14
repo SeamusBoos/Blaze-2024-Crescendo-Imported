@@ -1,0 +1,187 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 2.55,
+        "y": 6.814156597901747
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 4.503195748967527,
+        "y": 4.332276285303912
+      },
+      "isLocked": false,
+      "linkedName": "AmpNoteReal"
+    },
+    {
+      "anchor": {
+        "x": 5.4799768991309,
+        "y": 4.2147908267194
+      },
+      "prevControl": {
+        "x": 4.926198758196788,
+        "y": 4.3037498141886354
+      },
+      "nextControl": {
+        "x": 6.154197676463331,
+        "y": 4.106483919586802
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 7.829686070821158,
+        "y": 4.111991050457951
+      },
+      "prevControl": {
+        "x": 6.829686070821158,
+        "y": 4.111991050457951
+      },
+      "nextControl": {
+        "x": 8.829686070821158,
+        "y": 4.111991050457951
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 6.713574214268286,
+        "y": 3.818277403996669
+      },
+      "prevControl": {
+        "x": 7.1982017309294015,
+        "y": 3.7007919454121563
+      },
+      "nextControl": {
+        "x": 6.445422382291263,
+        "y": 3.8832839087183717
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.525407548131734,
+        "y": 4.86096084893422
+      },
+      "prevControl": {
+        "x": 5.171577570346555,
+        "y": 4.170733779750208
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "stageShot"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 2.0,
+      "rotationDegrees": 0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake",
+      "waypointRelativePos": 1.7,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "SpinUp",
+      "waypointRelativePos": 0,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "intakeoff",
+      "waypointRelativePos": 2.4,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeOff"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "AutoPitch",
+      "waypointRelativePos": 3.8,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "AutoShootPitchOnly"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -12.5,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Close 4 Note & 5 Note",
+  "previewStartingState": {
+    "rotation": 25.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

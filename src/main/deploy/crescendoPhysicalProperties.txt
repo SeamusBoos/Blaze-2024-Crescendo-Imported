@@ -1,0 +1,7 @@
+Last Updated - 2024/03/01
+
+Robot dimensions without bumpers - 28 inch (length) x 30 inch (width)
+Bumper width - 3.25 inch
+Robot dimensions with bumpers - 31.25 inch (length) x 33.25 inch (width)
+
+Swerve Module (frame to center) = 1.75 in / 44.5 mm

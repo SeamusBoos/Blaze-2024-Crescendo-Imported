@@ -1,0 +1,73 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.4,
+      "y": 7.3
+    },
+    "rotation": 90.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpCornerStatic1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AutoShootTimeout"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpStatic1-pt2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "FullPassthroughBloopTimeout"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpStatic2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpCornerStatic3"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AutoShootTimeout"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "AmpStatic4"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "AutoShootTimeout"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Advanced Static",
+  "choreoAuto": false
+}

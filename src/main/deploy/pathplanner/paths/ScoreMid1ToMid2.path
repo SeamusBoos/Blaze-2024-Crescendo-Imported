@@ -1,0 +1,121 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 4.686950053685439,
+        "y": 6.549814316086593
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.580029471329069,
+        "y": 6.520442951440464
+      },
+      "isLocked": false,
+      "linkedName": "ShootMid1"
+    },
+    {
+      "anchor": {
+        "x": 7.851119927591968,
+        "y": 4.104648209296419
+      },
+      "prevControl": {
+        "x": 6.853410225474299,
+        "y": 4.172289545033212
+      },
+      "nextControl": {
+        "x": 8.703846140086647,
+        "y": 4.04683626268661
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 4.743727797314749,
+        "y": 4.653861702089602
+      },
+      "prevControl": {
+        "x": 5.827701796248663,
+        "y": 4.234725089168489
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1.0,
+      "rotationDegrees": 0,
+      "rotateFast": true
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake & Spin Up",
+      "waypointRelativePos": 0.6,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "Intake"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "IntOff",
+      "waypointRelativePos": 1.45,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "IntakeOff"
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "SpinUpShooter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 7.22,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 360.0,
+    "maxAngularAcceleration": 180.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -12.5,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Midline",
+  "previewStartingState": {
+    "rotation": 12.5,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
